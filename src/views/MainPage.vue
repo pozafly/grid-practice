@@ -1,7 +1,6 @@
 <template>
-  <div class="color-red">
-    MainPagedd
-    <BoilerPlateComponent msg="Welcome to Your Vue.js App" />
+  <div>
+    <BoilerPlateComponent />
   </div>
 </template>
 
@@ -15,10 +14,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-$bgColor: red;
-
-.color-red {
-  color: $bgColor;
-}
-</style>
+<style></style>
