@@ -5,6 +5,10 @@
     <div class="child">3</div>
     <div class="child">4</div>
     <div class="child">5</div>
+    <div class="child">6</div>
+    <div class="child">7</div>
+    <div class="child">8</div>
+    <div class="child">9</div>
   </div>
 </template>
 
@@ -14,22 +18,18 @@ export default {};
 
 <style lang="scss" scoped>
 .father {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 100px 50px 300px;
+  gap: 10px;
 
   .child {
-    flex-basis: 30%;
     background: coral;
     color: #fff;
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .child:nth-child(4) {
-    margin-top: 10px;
   }
 }
 </style>
